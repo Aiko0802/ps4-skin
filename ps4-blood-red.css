@@ -1,0 +1,28 @@
+/* Blood Red Edition — Gamepad Viewer PS4 skin CSS overrides */
+/* Select PS4 or PS4 White and use this file in Edit CSS URL. */
+.controller.ds4, .controller.ds4.white, .controller.ps4 {
+  filter: grayscale(1) contrast(1.12);
+}
+/* Keep highlights vivid even with a grayscale controller background. */
+.controller.ds4 .button.pressed,
+.controller.ds4 .button.active,
+.controller.ds4 .trigger.pressed,
+.controller.ds4 .trigger.active,
+.controller.ps4 .button.pressed,
+.controller.ps4 .trigger.pressed,
+.edit .button.pressed,
+.edit .trigger.pressed {
+  background-color: #8b0000 !important;
+  box-shadow: 0 0 10px #8b0000 !important;
+  filter: none !important;
+}
+/* Red accents on the analog stick surfaces. */
+.controller.ds4 .stick,
+.controller.ps4 .stick {
+  border-color: #8b0000 !important;
+}
+/* Clear white button labels where text is used. */
+.controller.ds4 .button,
+.controller.ps4 .button {
+  color: #ffffff;
+}
